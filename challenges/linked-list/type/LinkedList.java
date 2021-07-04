@@ -56,7 +56,7 @@ public class LinkedList<T> {
             }
             current.setNext(node);
         }
-        size++;
+        this.size++;
     }
 
     public void insertAfter(T after, T data) {
