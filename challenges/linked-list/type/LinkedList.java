@@ -23,14 +23,14 @@ public class LinkedList<T> {
             }
             current.setNext(node);
         }
-        this.size++;
+        size++;
     }
 
     public void insert(T value) {
         Node<T> node = new Node<>(value);
         node.next = this.head;
         this.head = node;
-        this.size++;
+        size++;
     }
 
     public boolean includes(T value) {
@@ -59,42 +59,60 @@ public class LinkedList<T> {
         this.size++;
     }
 
-    public void insertAfter(T after, T data) {
-        boolean isIncludes = includes(after);
-
-        if (isIncludes) {
-            Node<T> newNode = new Node(data);
-            Node<T> current = this.head;
-            Node<T> aftCurrent;
-            while (current != null) {
-                if (current.getValue() == after) {
-                    aftCurrent = current.getNext();
-                    current.setNext(newNode);
-                    newNode.setNext(aftCurrent);
-                    break;
-                }
-                current = current.getNext();
+    public void insertAfter(T after, T value) {
+        Node<T> newNode = new Node(value);
+        Node<T> current = this.head;
+        Node<T> aftCurrent;
+        while (current != null) {
+            if (current.getValue() == after) {
+                aftCurrent = current.getNext();
+                current.setNext(newNode);
+                newNode.setNext(aftCurrent);
+                break;
             }
+            current = current.getNext();
         }
     }
 
-    public void insertBefore(T before, T data) {
-        boolean isIncludes = includes(before);
-        if (isIncludes) {
-            Node<T> newNode = new Node(data);
-            Node<T> current = this.head;
-            Node<T> prevCurrent = current;
-            while (current != null) {
-                if (current.getValue() == data) {
-                    newNode.setNext(current);
-                    prevCurrent.setNext(newNode);
-                    break;
-                }
-                prevCurrent = current;
-                current = current.getNext();
-            }
+    public void insertBefore(T index, T indexBefore) {
+        Node<T> node = new Node<>(indexBefore);
+        Node<T> current;
+        if (this.head.value == index) {
+            current = this.head;
+            this.head = node;
+            this.head.next = current;
         }
 
+        Node<T> dummyRef = this.head;
+        Node<T> dummyRef1 = dummyRef;
+        while (dummyRef.value != index) {
+            dummyRef1 = dummyRef;
+            dummyRef = dummyRef.next;
+        }
+
+        dummyRef1.next = node;
+        node.next = dummyRef;
+
+        size++;
+    }
+    public LinkedList<T> linkedListZip(LinkedList<T> first, LinkedList<T> second){
+
+        Node<T> dummyRef = first.head;
+        Node<T> dummyRef1 = second.head;
+
+        LinkedList<T> zipList = new LinkedList<>();
+
+        while (dummyRef != null || dummyRef1 != null){
+            if(dummyRef != null){
+                zipList.insert(dummyRef.value);
+                dummyRef = dummyRef.next;
+            }
+            if(dummyRef1 != null){
+                zipList.insert(dummyRef1.value);
+                dummyRef1 = dummyRef1.next;
+            }
+        }
+        return zipList;
     }
 
     public void valuesToString() {
