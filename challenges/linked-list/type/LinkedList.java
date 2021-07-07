@@ -2,10 +2,13 @@ package type;
 
 import data.Node;
 
+import java.io.Serializable;
+
 
 public class LinkedList<T> {
     private Node<T> head;
     public int size;
+//    private Object quote;
 
     public LinkedList() {
         this.head = null;
@@ -95,19 +98,20 @@ public class LinkedList<T> {
 
         size++;
     }
-    public LinkedList<T> linkedListZip(LinkedList<T> first, LinkedList<T> second){
+
+    public LinkedList<T> linkedListZip(LinkedList<T> first, LinkedList<T> second) {
 
         Node<T> dummyRef = first.head;
         Node<T> dummyRef1 = second.head;
 
         LinkedList<T> zipList = new LinkedList<>();
 
-        while (dummyRef != null || dummyRef1 != null){
-            if(dummyRef != null){
+        while (dummyRef != null || dummyRef1 != null) {
+            if (dummyRef != null) {
                 zipList.insert(dummyRef.value);
                 dummyRef = dummyRef.next;
             }
-            if(dummyRef1 != null){
+            if (dummyRef1 != null) {
                 zipList.insert(dummyRef1.value);
                 dummyRef1 = dummyRef1.next;
             }
@@ -115,9 +119,23 @@ public class LinkedList<T> {
         return zipList;
     }
 
+    public void reversList() {
+        Node<T> before = null;
+//    Node<T> current = this.head;
+        Node<T> after;
+        while (this.head.getNext() != null) {
+            after = this.head.getNext();
+            this.head.setNext(before);
+            before = this.head;
+            this.head = after;
+        }
+        this.head.next = before;
+//    return fromTheEnd;
+    }
+public void palindrome(){
+
+}
     public void valuesToString() {
-
-
         Node<T> current = this.head;
         String allValues = "";
         while (current != null) {
@@ -130,8 +148,4 @@ public class LinkedList<T> {
 
     }
 
-
-    public Node<T> getHead() {
-        return this.head;
-    }
 }
