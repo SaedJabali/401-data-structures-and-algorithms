@@ -1,15 +1,17 @@
 import type.LinkedList;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList<java.io.Serializable> List = new LinkedList<>();
-        LinkedList<java.io.Serializable> firstList = new LinkedList<>();
-        LinkedList<java.io.Serializable> secondList = new LinkedList<>();
-        LinkedList<java.io.Serializable> zipList = new LinkedList<>();
-        LinkedList<java.io.Serializable> lastList = new LinkedList<>();
+        LinkedList any = new LinkedList();
+        LinkedList<Serializable> List = new LinkedList<>();
+        LinkedList<Serializable> firstList = new LinkedList<>();
+        LinkedList<Serializable> secondList = new LinkedList<>();
+        LinkedList<Serializable> zipList = new LinkedList<>();
+        LinkedList<Serializable> lastList = new LinkedList<>();
         System.out.println("NULL");
         System.out.println("the size of the list is " + List.size);
         List.insertAtEnd(3);
@@ -36,14 +38,30 @@ public class Main {
         List.append("Bye Added");
 //        List.valuesToString();
 //        System.out.println(" ");
-        List.insertBefore(19,5648);
-        List.insertBefore(3,21212121);
+        List.insertBefore(19, 5648);
+        List.insertBefore(3, 21212121);
         List.valuesToString();
 //        System.out.println(" ");
         System.out.println(" ");
 
         List.reversList();
+//        List.valuesToString();
+//        String any = List.valuesToString();
         List.valuesToString();
+        System.out.println("  ");
+
+        any.insert(1);
+        any.insert(2);
+        any.insert(3);
+        any.insert(2);
+        any.insert(1);
+        any.isPalindromeLL();
+//        List.valuesToString();
+        System.out.println("  ");
+        System.out.println("  ");
+
+        System.out.println(List.size);
+//        List.palindrome();
 //        System.out.println("jldkhfnb'pfx;");
 //        lastList.valuesToString();
 
