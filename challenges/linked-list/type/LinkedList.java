@@ -2,8 +2,6 @@ package type;
 
 import data.Node;
 
-import java.io.Serializable;
-
 
 public class LinkedList<T> {
     private Node<T> head;
@@ -132,9 +130,68 @@ public class LinkedList<T> {
         this.head.next = before;
 //    return fromTheEnd;
     }
-public void palindrome(){
 
-}
+    //    public boolean palindrome(LinkedList any) {
+//        ArrayList arr = new ArrayList();
+//        Node current = any.head;
+//        while (current != null) {
+//            arr.add(current.getValue());
+//            for (int i = 0; i < arr.size(); i++) {
+//                if (arr.get(i) == current.getValue()) {
+//                    current = current.next;
+//                    System.out.println("true"+arr);
+//                    return true;
+//                }
+//            }
+//        }
+//        System.out.println(arr);
+//        return false;
+//    }
+    public Node reverseList(Node temp) {
+        Node current = temp;
+        Node prevNode = null, nextNode = null;
+
+        //Swap the previous and next nodes of each node to reverse the direction of the list
+        while (current != null) {
+            nextNode = current.next;
+            current.next = prevNode;
+            prevNode = current;
+            current = nextNode;
+        }
+        return prevNode;
+    }
+
+    public void isPalindromeLL() {
+        Node current = head;
+        boolean flag = true;
+
+        //Store the mid position of the list
+        int mid = (size % 2 == 0) ? (size / 2) : ((size + 1) / 2);
+
+        //Finds the middle node in given singly linked list
+        for (int i = 1; i < mid; i++) {
+            current = current.next;
+        }
+
+        //Reverse the list after middle node to end
+        Node revHead = reverseList(current.next);
+
+        //Compare nodes of first half and second half of list
+        while (head != null && revHead != null) {
+            if (head.value != revHead.value) {
+                flag = false;
+                break;
+            }
+            head = head.next;
+            revHead = revHead.next;
+        }
+
+        if (flag)
+            System.out.println("Given singly linked list is a palindrome");
+        else
+            System.out.println("Given singly linked list is not a palindrome");
+    }
+
     public void valuesToString() {
         Node<T> current = this.head;
         String allValues = "";
