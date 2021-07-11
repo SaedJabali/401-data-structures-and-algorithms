@@ -19,7 +19,3 @@ Queue methods:
 
 in this challenge we are supposed to do manipulation on stack and on a queue,
 we should add and delete elements and so on.
-
-
-## Approach & Efficiency
-
