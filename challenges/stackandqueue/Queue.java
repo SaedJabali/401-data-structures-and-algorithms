@@ -9,6 +9,11 @@ public class Queue<T> {
         this.rear = null;
     }
 
+    public Queue() {
+
+    }
+
+
     public void enqueue(T data) {
         Node<T> temp = new Node<T>(data);
         if (rear == null) {
