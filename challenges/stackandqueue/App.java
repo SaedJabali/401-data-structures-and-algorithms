@@ -1,8 +1,10 @@
 import type.LinkedList;
 
+import java.io.IOException;
+
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Stack<java.io.Serializable> stack = new Stack<>();
         Queue<java.io.Serializable> queue = new Queue<>();
         PseudoQueue stackqueue = new PseudoQueue();
@@ -36,15 +38,28 @@ public class App {
 //        System.out.println("  ");
 //        System.out.println(queue.peek());
 //        System.out.println(queue.isEmpty());
-        stackqueue.enQueue(5);
-        stackqueue.enQueue(6);
-        stackqueue.enQueue(7);
-        stackqueue.enQueue(8);
-        stackqueue.toSstring();
-        System.out.println("  ");
-        System.out.println(stackqueue.deQueue());
-        System.out.println(stackqueue.deQueue());
-        System.out.println(stackqueue.deQueue());
-        stackqueue.toSstring();
+//        stackqueue.enQueue(5);
+//        stackqueue.enQueue(6);
+//        stackqueue.enQueue(7);
+//        stackqueue.enQueue(8);
+//        stackqueue.toSstring();
+//        System.out.println("  ");
+//        System.out.println(stackqueue.deQueue());
+//        System.out.println(stackqueue.deQueue());
+//        System.out.println(stackqueue.deQueue());
+//        stackqueue.toSstring();
+
+        AnimalShelter animal= new AnimalShelter();
+        animal.enqueue(" cat");
+        animal.enqueue(" dog");
+
+
+        animal.valuesToString();
+        System.out.println(" ");
+        System.out.println(animal.dequeue(" cat"));
+        System.out.println(animal.dequeue(" dog"));
+        System.out.println(animal.dequeue(" bird"));
+        System.out.println(animal.dequeue(" turtle"));
+        System.out.println(animal.dequeue(" duck"));
     }
 }
