@@ -1,4 +1,4 @@
-public class Animal {
+public class Animal extends Queue<Animal> {
     String type;
 
     public Animal(String type) {

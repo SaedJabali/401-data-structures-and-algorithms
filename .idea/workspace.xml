@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa20393-5ad1-46f8-ac81-1a0ce58eb103" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/challenges/stackandqueue/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/stackandqueue/AnimalShelter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/stackandqueue/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/stackandqueue/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/challenges/stackandqueue/StackQueueBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/stackandqueue/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/stackandqueue/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challenges/stackandqueue/AnimalShelter.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/stackandqueue/AnimalShelter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challenges/stackandqueue/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/stackandqueue/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/AnimalShelter.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/challenges/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/challenges/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/Queue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/challenges/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
