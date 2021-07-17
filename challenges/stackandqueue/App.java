@@ -1,10 +1,13 @@
 import type.LinkedList;
 
+import java.io.IOException;
+import java.io.Serializable;
+
 public class App {
 
-    public static void main(String[] args) {
-        Stack<java.io.Serializable> stack = new Stack<>();
-        Queue<java.io.Serializable> queue = new Queue<>();
+    public static void main(String[] args) throws IOException {
+        Stack<Serializable> stack = new Stack<>();
+        Queue<Serializable> queue = new Queue<>();
         PseudoQueue stackqueue = new PseudoQueue();
 //        stack.push(17);
 //        stack.push(18);
@@ -36,15 +39,44 @@ public class App {
 //        System.out.println("  ");
 //        System.out.println(queue.peek());
 //        System.out.println(queue.isEmpty());
-        stackqueue.enQueue(5);
-        stackqueue.enQueue(6);
-        stackqueue.enQueue(7);
-        stackqueue.enQueue(8);
-        stackqueue.toSstring();
-        System.out.println("  ");
-        System.out.println(stackqueue.deQueue());
-        System.out.println(stackqueue.deQueue());
-        System.out.println(stackqueue.deQueue());
-        stackqueue.toSstring();
+//        stackqueue.enQueue(5);
+//        stackqueue.enQueue(6);
+//        stackqueue.enQueue(7);
+//        stackqueue.enQueue(8);
+//        stackqueue.toSstring();
+//        System.out.println("  ");
+//        System.out.println(stackqueue.deQueue());
+//        System.out.println(stackqueue.deQueue());
+//        System.out.println(stackqueue.deQueue());
+//        stackqueue.toSstring();
+//        AnimalShelter shelter = new AnimalShelter();
+//        Dog dog1 = new Dog("dog1");
+//        shelter.enqueue(dog1);
+//        shelter.enqueue(dog1);
+//        Cat cat1 = new Cat("cat1");
+//        shelter.enqueue(cat1);
+//
+//        shelter.toSstring();
+//        System.out.println(" ");
+//        System.out.println(animal.dequeue(" cat"));
+//        System.out.println(animal.dequeue(" dog"));
+//        System.out.println(animal.dequeue(" bird"));
+//        System.out.println(animal.dequeue(" turtle"));
+//        System.out.println(animal.dequeue(" duck"));
+
+
+        StackQueueBrackets brackets = new StackQueueBrackets();
+
+        System.out.println("1- "+brackets.checkBrackets("{}"));
+        System.out.println("2- "+brackets.checkBrackets("{}(){}"));
+        System.out.println("3- "+brackets.checkBrackets("()[[Extra Characters]]"));
+        System.out.println("4- "+brackets.checkBrackets("(){}[[]]"));
+        System.out.println("5- "+brackets.checkBrackets("{}{Code}[Fellows](())"));
+        System.out.println("6- "+brackets.checkBrackets("[({}]"));
+        System.out.println("7- "+brackets.checkBrackets("(]("));
+        System.out.println("8- "+brackets.checkBrackets("{(})"));
+        System.out.println("9- "+brackets.checkBrackets("{"));
+        System.out.println("10- "+brackets.checkBrackets(")"));
+        System.out.println("11- "+brackets.checkBrackets("]"));
     }
 }

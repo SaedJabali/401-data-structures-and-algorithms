@@ -1,4 +1,4 @@
-package challenge4/main.java/App.java;
+package main.java;
 
 import java.util.Arrays;
 
