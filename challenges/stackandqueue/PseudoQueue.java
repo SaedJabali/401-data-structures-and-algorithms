@@ -29,6 +29,6 @@ public class PseudoQueue {
         return peek;
     }
     public void toSstring() {
-        this.stack1.valuesToString();
+        stack1.valuesToString();
     }
 }
