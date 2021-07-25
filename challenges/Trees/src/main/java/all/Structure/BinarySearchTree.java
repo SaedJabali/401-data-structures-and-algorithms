@@ -1,6 +1,6 @@
-package Structure;
+package all.Structure;
 
-import Data.Node;
+import all.Data.Node;
 
 public class BinarySearchTree extends BinaryTree {
     Node root;

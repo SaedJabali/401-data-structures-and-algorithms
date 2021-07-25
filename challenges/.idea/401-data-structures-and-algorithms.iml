@@ -11,6 +11,7 @@
       <sourceFolder url="file://$MODULE_DIR$/linked-list" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/stackandqueue" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mock interview" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Trees/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

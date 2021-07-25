@@ -1,8 +1,8 @@
-Data/Node.java
- Data.Node
-Structure/BinarySearchTree.java
- Structure.BinarySearchTree
-App.java
- App
-Structure/BinaryTree.java
- Structure.BinaryTree
+all.Data/Node.java
+ all.Data.Node
+all.Structure/BinarySearchTree.java
+ all.Structure.BinarySearchTree
+all.TreesApp.java
+ all.TreesApp
+all.Structure/BinaryTree.java
+ all.Structure.BinaryTree
