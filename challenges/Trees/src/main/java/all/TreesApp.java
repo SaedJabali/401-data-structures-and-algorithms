@@ -1,8 +1,11 @@
-import Data.Node;
-import Structure.BinarySearchTree;
-import Structure.BinaryTree;
+package all;
 
-public class App {
+import all.Data.Node;
+import all.Structure.BinarySearchTree;
+import all.Structure.BinaryTree;
+
+
+public class TreesApp {
     public static void main(String[] args) {
         System.out.println("ok");
 
@@ -12,16 +15,16 @@ public class App {
         binaryTree.getRoot().setLeft(new Node(2));
         binaryTree.getRoot().setRight(new Node(3));
         binaryTree.getRoot().getLeft().setLeft(new Node(4));
+        binaryTree.getRoot().getLeft().setRight(new Node(9));
 //        System.out.print(binaryTree.toString());
         System.out.println(" ");
         binaryTree.inOrder(binaryTree.getRoot());
         System.out.println("  ");
         binaryTree.postOrder(binaryTree.getRoot());
         System.out.println("  ");
-        System.out.println("  ");
         binaryTree.preOrder(binaryTree.getRoot());
         System.out.println(" ");
-        System.out.println("after preorder -------------------------------");
+        System.out.println("the max is "+binaryTree.getMax(binaryTree.getRoot()));
         System.out.println(" -------------------------------");
 
 

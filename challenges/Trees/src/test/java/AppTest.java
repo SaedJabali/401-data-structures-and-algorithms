@@ -1,6 +1,6 @@
-//import Data.Node;
-//import Structure.BinarySearchTree;
-//import Structure.BinaryTree;
+//import all.Data.Node;
+//import all.Structure.BinarySearchTree;
+//import all.Structure.BinaryTree;
 //import org.junit.jupiter.api.Assertions;
 //import org.junit.jupiter.api.Test;
 //

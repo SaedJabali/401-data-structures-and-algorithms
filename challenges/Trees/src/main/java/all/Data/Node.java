@@ -1,4 +1,4 @@
-package Data;
+package all.Data;
 
 public class Node {
     int key;
