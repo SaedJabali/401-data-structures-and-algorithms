@@ -15,7 +15,9 @@ public class TreesApp {
         binaryTree.getRoot().setLeft(new Node(2));
         binaryTree.getRoot().setRight(new Node(3));
         binaryTree.getRoot().getLeft().setLeft(new Node(4));
-        binaryTree.getRoot().getLeft().setRight(new Node(9));
+        binaryTree.getRoot().getLeft().setRight(new Node(78));
+        binaryTree.getRoot().getRight().setRight(new Node(13));
+        binaryTree.getRoot().getRight().setLeft(new Node(6));
 //        System.out.print(binaryTree.toString());
         System.out.println(" ");
         binaryTree.inOrder(binaryTree.getRoot());
@@ -24,8 +26,12 @@ public class TreesApp {
         System.out.println("  ");
         binaryTree.preOrder(binaryTree.getRoot());
         System.out.println(" ");
-        System.out.println("the max is "+binaryTree.getMax(binaryTree.getRoot()));
-        System.out.println(" -------------------------------");
+        System.out.println("the max is " + binaryTree.getMax(binaryTree.getRoot()));
+        System.out.println(" ");
+        System.out.println("BFT ");
+//        binaryTree.BFT();
+        System.out.println(" ");
+        System.out.println("-------------------------------");
 
 
         BinarySearchTree binarySearchTree = new BinarySearchTree();
@@ -40,6 +46,8 @@ public class TreesApp {
         System.out.println("  ");
         binarySearchTree.preOrder(binarySearchTree.getRoot());
         System.out.println(" ");
+        System.out.println("the max is " + binarySearchTree.getMax(binarySearchTree.getRoot()));
+        System.out.println(" ");
 //        System.out.println(binarySearchTree.contains());
 //        System.out.println(binarySearchTree.contains());
         System.out.println(binarySearchTree.contains(binarySearchTree.getRoot(), 3));
@@ -50,6 +58,4 @@ public class TreesApp {
         System.out.println(binarySearchTree.contains(binarySearchTree.getRoot(), 4));
         System.out.println(binarySearchTree.contains(binarySearchTree.getRoot(), 1));
     }
-
-
 }
