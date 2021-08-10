@@ -1,10 +1,10 @@
 package all.Structure;
 
+import all.Data.BQueue;
 import all.Data.Node;
 
 public class BinaryTree {
     Node root;
-    int max;
 
     public BinaryTree() {
     }
@@ -41,8 +41,7 @@ public class BinaryTree {
         this.root = root;
     }
 
-    public int getMax(Node node)
-    {
+    public int getMax(Node node) {
         if (node == null)
             return 0;
 
@@ -56,7 +55,6 @@ public class BinaryTree {
             root = right;
         return root;
     }
-
 
     @Override
     public String toString() {
