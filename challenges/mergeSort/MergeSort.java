@@ -77,18 +77,19 @@ public class MergeSort {
                 j++;
             }
             k++;
-
-            if (i == left.length) {
+        }
+        if (i == left.length) {
+            while (k < arr.length) {
                 arr[k] = right[j];
                 j++;
                 k++;
-            } else {
+            }
+        } else {
+            while (k < arr.length) {
                 arr[k] = left[i];
                 i++;
                 k++;
-
             }
-
         }
     }
 }
