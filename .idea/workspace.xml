@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa20393-5ad1-46f8-ac81-1a0ce58eb103" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/challenges/mock interview/ChApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/challenges/mock interview/DuckDuckGoose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/401-data-structures-and-algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/401-data-structures-and-algorithms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/.idea/challenges.iml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/.idea/challenges.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge 2/ArrayInsertShift.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge 2/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 2/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge 2/array-insert-shift.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 2/array-insert-shift.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge4/Collab,challenge.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 4/Collab,challenge.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge4/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 4/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge4/baraa.png" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 4/baraa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge4/challenge4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 4/challenge4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenge4/main.java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenge 4/main.java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/challenges.iml" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/challenges.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/out/production/challenges/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/out/production/challenges/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/out/production/challenges/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/out/production/challenges/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/out/production/challenges/array-insert-shift.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/out/production/challenges/array-insert-shift.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/out/production/challenges/data/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/out/production/challenges/data/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/out/production/challenges/type/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/out/production/challenges/type/LinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challenges/stackandqueue/PseudoQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/challenges/stackandqueue/PseudoQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/challenges/PseudoQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/PseudoQueue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/challenges/array-insert-shift.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/challenges/array-insert-shift.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +36,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/challenges/stackandqueue" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../newRepo/Spring/Demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.ChApp">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11 (WSL)" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -75,19 +55,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="HashApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="HashApp" />
+      <module name="401-data-structures-and-algorithms" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="401-data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="16" />
+      <option name="PACKAGE_NAME" value="java" />
+      <option name="MAIN_CLASS_NAME" value="java.AppTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.ChApp" />
+      <item itemvalue="Application.HashApp" />
+      <item itemvalue="JUnit.AppTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.HashApp" />
         <item itemvalue="Application.ChApp" />
       </list>
     </recent_temporary>
@@ -101,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625901451079</updated>
       <workItem from="1626530131659" duration="585000" />
+      <workItem from="1628955153256" duration="301000" />
     </task>
     <servers />
   </component>
