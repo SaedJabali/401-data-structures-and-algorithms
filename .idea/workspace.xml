@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fa20393-5ad1-46f8-ac81-1a0ce58eb103" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable/app/src/main/java/HashApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/main/java/HashApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/data/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/data/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/type/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/type/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HashTable/app/src/test/java/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/test/java/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/data/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/data/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/type/HashTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/type/HashTable.class" afterDir="false" />
-    </list>
+    <list default="true" id="2fa20393-5ad1-46f8-ac81-1a0ce58eb103" name="Default Changelist" comment="ch31" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +15,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="hashtable" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1v77mIYSLjVvewshffvuOLjRE7s" />
@@ -81,6 +77,17 @@
           <ENTRY IS_ENABLED="true" PARSER="runconfig" />
         </ENTRIES>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,7 +176,16 @@
       <workItem from="1628955153256" duration="906000" />
       <workItem from="1629025183069" duration="5868000" />
       <workItem from="1629031101505" duration="1677000" />
+      <workItem from="1629047093668" duration="308000" />
     </task>
+    <task id="LOCAL-00001" summary="ch31">
+      <created>1629047353512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629047353512</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,5 +202,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ch31" />
+    <option name="LAST_COMMIT_MESSAGE" value="ch31" />
   </component>
 </project>
