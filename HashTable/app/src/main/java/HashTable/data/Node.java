@@ -14,6 +14,9 @@ public class Node<V> {
         this.hashCode = hashCode;
     }
 
+    public Node() {
+    }
+
     public String getKey() {
         return key;
     }
