@@ -1,20 +1,40 @@
 package HashTable.methods;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Locale;
 
 
-public  class  RepeatedWord {
+public class RepeatedWord {
 
     private static final String PATTERN = "\\W+";
+
+    public String repeatedWord(String str) {
+            int count = 0;
+        String[] words = str.toLowerCase().split(PATTERN);
+
+        ArrayList<String> wordTable = new ArrayList<>();
+
+        System.out.println("Most common word is : ");
+
+        for (String word : words) {
+            if (wordTable.contains(word)) {
+                return word;
+            } else {
+                wordTable.add(word);
+            }
+        }
+
+//        System.out.println(word);
+        return null;
+    }
 
     public String repeatedWords(String book) {
 
         int count;
         ArrayList<String> repeatedWordsFound = new ArrayList<>();
 
-        String lowerString = book.toLowerCase();
-
-        String[] words = book.split(PATTERN);
+        String[] words = book.toLowerCase().split(PATTERN);
 
         System.out.println("Duplicate words : ");
 
