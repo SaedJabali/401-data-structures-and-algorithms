@@ -1,69 +1,88 @@
 package graph.type;
 
-import graph.data.Edge;
+
 import graph.data.Vertex;
 
 import java.util.*;
 
 public class Graph {
 
-    private HashMap<Vertex  , ArrayList> vertices = new HashMap<Vertex , ArrayList>();
-    private int size ;
-    public Graph(){}
+    private final Map<Vertex, List<Vertex>> adjVertices;
 
-    public Vertex addNode(Vertex vertex){
-        vertices.put(vertex , new ArrayList());
-        this.size++;
-        return vertex;
+    public Graph() {
+        adjVertices = new HashMap<>();
     }
 
-    public void addEdge(Vertex start , Vertex end , int wight){
-        if (this.vertices.containsKey(start) && this.vertices.containsKey(end)){
-            ArrayList edges = this.vertices.get(start);
-            edges.add(new Edge(end , wight));
-            this.vertices.put(start , edges);
+    public void addVertex(String data) {
+        Vertex vertex = new Vertex(data);
+        adjVertices.putIfAbsent(vertex, new ArrayList<>());
+    }
+
+    public void addEdge(String data1, String data2) {
+        Vertex vertex1 = new Vertex(data1);
+        Vertex vertex2 = new Vertex(data2);
+
+        adjVertices.get(vertex1).add(vertex2);
+        adjVertices.get(vertex2).add(vertex1);
+    }
+
+    void removeVertex(String data) {
+        Vertex vertex = new Vertex(data);
+        adjVertices.values().forEach(list -> list.remove(vertex));
+        adjVertices.remove(vertex);
+    }
+
+    void removeEdge(String data1, String data2) {
+        Vertex vertex1 = new Vertex(data1);
+        Vertex vertex2 = new Vertex(data2);
+
+        List<Vertex> edgeVertex1 = adjVertices.get(vertex1);
+        List<Vertex> edgeVertex2 = adjVertices.get(vertex2);
+
+        if (edgeVertex1 != null) {
+            edgeVertex1.remove(vertex2);
+        }
+
+        if (edgeVertex2 != null) {
+            edgeVertex2.remove(vertex1);
         }
     }
 
-    public HashMap<Vertex , ArrayList> getVertices(){
-        return vertices;
-    }
-
-    public List getNodes(){
-        List<Vertex> nodes = new ArrayList<>();
-        return nodes;
-    }
-
-    public List getNeighbores(Vertex vertex){
-        if (vertices.containsKey(vertex)){
-            return vertices.get(vertex);
+    String printGraph() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Vertex vertex : adjVertices.keySet()) {
+            stringBuilder.append(vertex);
+            stringBuilder.append(adjVertices.get(vertex));
         }
-        return new ArrayList();
+
+        return stringBuilder.toString();
     }
 
-
-    public void setVertices(HashMap<Vertex , ArrayList> vertices){
-        this.vertices=vertices;
+    int size() {
+        return adjVertices.size();
     }
 
-    public int size(){
-        return this.size;
+    Set<String> bft(Graph graph, String root) {
+        Set<String> visited = new LinkedHashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        queue.add(root);
+        visited.add(root);
+        while (!queue.isEmpty()) {
+            String vertex = queue.poll();
+            for (Vertex v : graph.getAdjvertices(vertex)) {
+                if (!visited.contains(v.data)) {
+                    visited.add(v.data);
+                    queue.add(v.data);
+                }
+            }
+        }
+        return visited;
     }
 
-    public int getSize(){
-        return size;
-    }
-
-    public void setSize(int size){
-        this.size=size;
-    }
-
-    @Override
-    public String toString() {
-        return "Graph{" +
-                "vertices=" + vertices +
-                ", size=" + size +
-                '}';
+    private List<Vertex> getAdjvertices(String data) {
+        return adjVertices.get(new Vertex(data));
     }
 }
+
+
 

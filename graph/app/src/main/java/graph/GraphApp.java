@@ -3,8 +3,7 @@
  */
 package graph;
 
-import graph.data.Edge;
-import graph.data.Vertex;
+
 import graph.type.Graph;
 
 public class GraphApp {
@@ -12,10 +11,8 @@ public class GraphApp {
         System.out.println("helloooooo");
 
         Graph graph = new Graph();
-        Vertex vertex = new Vertex(1);
-        Edge edge = new Edge(vertex , 3);
-        graph.addNode(vertex);
-
+        graph.addVertex("Series");
+        graph.addEdge("Rick", "Morty");
         System.out.println(graph);
 
     }

@@ -1,23 +1,31 @@
 package graph.data;
 
+import java.util.Objects;
+
 public class Vertex {
 
-     Object value;
+    public String data;
 
-    public Vertex(Object value) {
-        this.value = value;
-    }
-
-    public Object getValue() {
-        return value;
-    }
-
-    public void setValue(Object value) {
-        this.value = value;
+    public Vertex(String data) {
+        this.data = data;
     }
 
     @Override
     public String toString() {
-        return " Vertex{ " + " value = " + value + " }";
+        return "Vertex{" +
+                "label='" + data + '\'' +
+                '}';
+    }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Vertex vertex)) return false;
+//        return data.equals(vertex.data);
+//    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(data);
     }
 }
