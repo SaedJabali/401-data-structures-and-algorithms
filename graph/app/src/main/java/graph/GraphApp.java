@@ -3,19 +3,16 @@
  */
 package graph;
 
-import graph.data.Edge;
-import graph.data.Vertex;
+
 import graph.type.Graph;
 
 public class GraphApp {
     public static void main(String[] args) {
-        System.out.println("helloooooo لا تستحي من براء بليز");
+        System.out.println("helloooooo");
 
         Graph graph = new Graph();
-        Vertex vertex = new Vertex(1);
-        Edge edge = new Edge(vertex , 3);
-        graph.addNode(vertex);
-
+        graph.addVertex("Series");
+        graph.addEdge("Rick", "Morty");
         System.out.println(graph);
 
     }
