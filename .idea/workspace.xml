@@ -2,8 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fa20393-5ad1-46f8-ac81-1a0ce58eb103" name="Default Changelist" comment="ch31">
+      <change afterPath="$PROJECT_DIR$/graph/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/src/main/java/graph/GraphApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/src/main/java/graph/data/Edge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/src/main/java/graph/data/Vertex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/src/main/java/graph/type/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/app/src/test/java/graph/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/401-data-structures-and-algorithms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/401-data-structures-and-algorithms.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/type/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/main/java/HashTable/type/HashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HashTable/app/src/main/java/linkedList/type/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable/app/src/main/java/linkedList/type/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashMap/data/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashMap/type/HashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/data/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/methods/RepeatedWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/HashTable/type/HashTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/TreeIntersection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/linkedList/data/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/401-data-structures-and-algorithms/linkedList/type/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/ArrayBinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/ArrayInsertShift.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/ArrayRevers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/BinarySearch.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Cat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/ChApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/DuckDuckGoose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/PseudoQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Queue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/StackQueueBrackets.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/array-insert-shift.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/array-reverse.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/data/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/llrevers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/challenges/type/LinkedList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/401-data-structures-and-algorithms/java/AppTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,10 +82,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/HashTable/app/build.gradle" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HashTable/app/build/classes/java/main/App.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1v77mIYSLjVvewshffvuOLjRE7s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,6 +129,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GraphApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.GraphApp" />
+      <module name="401-data-structures-and-algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="graph.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GraphApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,6 +167,8 @@
       <workItem from="1629214314937" duration="267000" />
       <workItem from="1629287321269" duration="720000" />
       <workItem from="1629288340534" duration="199000" />
+      <workItem from="1629741170821" duration="549000" />
+      <workItem from="1629741860816" duration="2283000" />
     </task>
     <task id="LOCAL-00001" summary="ch31">
       <created>1629047353512</created>

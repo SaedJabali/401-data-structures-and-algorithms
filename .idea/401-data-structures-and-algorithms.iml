@@ -7,7 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Hash/HashTable/app/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Hash/HashTable/app/src/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Hash/TreeIntersection" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HashTable/app/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/graph/app/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
