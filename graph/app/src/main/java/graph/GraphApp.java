@@ -9,7 +9,7 @@ import graph.type.Graph;
 
 public class GraphApp {
     public static void main(String[] args) {
-        System.out.println("helloooooo لا تستحي من براء بليز");
+        System.out.println("helloooooo");
 
         Graph graph = new Graph();
         Vertex vertex = new Vertex(1);
